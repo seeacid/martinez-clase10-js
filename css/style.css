@@ -1,31 +1,31 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(64, 0, 92);
 }
 
-
-.menu{
+.menu {
     width: 100vw;
     background-color: darkviolet;
     display: flex;
     flex-direction: column;
-    
 }
-.logo{
-    width:1000px;
+
+.logo {
+    width: 1000px;
     margin-left: 0 auto;
-    margin-right:  0 auto;
+    margin-right: 0 auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.botonMenu{
+
+.botonMenu {
     width: 500px;
     height: 150px;
     background-color: rgb(93, 0, 133);
@@ -35,29 +35,26 @@ body{
     margin-right: auto;
 }
 
-.textMenu{
+.textMenu {
     margin: auto;
     font-size: 35pt;
     color: yellow;
     font-family: 'IM Fell English SC', serif;
     text-align: center;
-    margin-top:45px;
+    margin-top: 45px;
     text-decoration: none;
-
-
-
 }
 
-h1{
+h1 {
     font-family: 'IM Fell English SC', serif;
     font-size: 60pt;
     text-align: center;
     margin-bottom: 2rem;
-    color:red;
+    color: red;
     font-weight: lighter;
 }
 
-.battleground{
+.battleground {
     background-color: rgb(0, 59, 0);
     width: 80vw;
     height: auto;
@@ -66,27 +63,25 @@ h1{
     margin-right: auto;
 }
 
-.divChar{
+.divChar {
     display: inline-block;
     background-color: chartreuse;
     width: 20%;
     height: 70%;
     margin-left: 2%;
     margin-top: 5rem;
-
 }
 
-.divMons{
+.divMons {
     display: inline-block;
-    background-color:chartreuse;
+    background-color: chartreuse;
     width: 20%;
     height: 70%;
     margin-left: 40%;
     margin-top: 5rem;
-
 }
 
-.vidaChar{
+.vidaChar {
     background-color: red;
     height: 3rem;
     width: 20rem;
@@ -94,54 +89,52 @@ h1{
     text-align: center;
 }
 
-.vidaMons{
+.vidaMons {
     background-color: red;
     height: 3rem;
     width: 20rem;
     margin: 0px auto;
     border: black 2px solid;
     text-align: center;
-
 }
 
-img{
+img {
     width: 100%;
     margin: 0px auto;
-
 }
 
-p{
+p {
     font-size: 27pt;
     color: rgb(0, 0, 0);
     font-weight: bolder;
 }
 
-.tagName{
+.tagName {
     font-size: 30pt;
     text-align: center;
     font-weight: bold;
 }
 
-.divBoton{
+.divBoton {
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.boton{
+.boton {
     width: 10rem;
     height: 3rem;
     font-size: 25pt;
 }
 
-h2{
+h2 {
     text-align: center;
     font-family: 'IM Fell English SC', serif;
     font-size: 24pt;
 }
 
-.item{
+.item {
     color: white;
     text-align: center;
     margin-left: 2rem;
@@ -152,13 +145,60 @@ h2{
     background-color: black;
 }
 
-.pocion{
+.pocion {
     width: 65px;
 }
 
-.backpack{
+.backpack {
     background-color: black;
     width: 30rem;
     height: 5rem;
     margin: 0 auto;
+}
+
+.flecha {
+    margin-top: 50px;
+    position: absolute;
+    top: 550px;
+    left: 550px;
+    width: 220px;
+    display: none;
+}
+
+.slash {
+    margin-top: 50px;
+    position: absolute;
+    top: 420px;
+    left: 370px;
+    width: 220px;
+    display: none;
+}
+
+.damageUser {
+    -webkit-text-stroke: 2px black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 480px;
+    left: 1400px;
+    width: 220px;
+    display: none;
+    color: red;
+    font-size: 34pt;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.damageMons {
+    -webkit-text-stroke: 2px black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 400px;
+    left: 490px;
+    width: 220px;
+    color: red;
+    display: none;
+    font-size: 34pt;
+    font-weight: bold;
 }
