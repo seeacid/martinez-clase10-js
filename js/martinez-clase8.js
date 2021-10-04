@@ -216,10 +216,10 @@ itemsMochila.className = "backpack"
 let backpackx = document.getElementById("mochila")
 let mochilaParent = backpackx.parentNode
 let pocion2 = document.createElement("img")
-pocion2.src = "potion.png"
+pocion2.src = "img/potion.png"
 pocion2.className = "pocion"
 let pocion3 = document.createElement("img")
-pocion3.src = "potion2.png"
+pocion3.src = "img/potion2.png"
 pocion3.className = "pocion"
 
 let pociones = [pocion2, pocion3]
