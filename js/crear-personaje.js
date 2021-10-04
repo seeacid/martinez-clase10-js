@@ -45,6 +45,8 @@ class Personaje {
     }
 }
 
+//Api
+const geturl = "http://hp-api.herokuapp.com/api/characters"
 
 //Variable de nombre
 let inputNombre = ""
@@ -204,6 +206,8 @@ function derechaRace() {
 
 
 
+//eventos de nombre
+
 
 
 //Eventos de clase
@@ -215,3 +219,19 @@ btnClaseDer.addEventListener("click", derecha)
 
 btnRaceIzq.addEventListener("click", izquierdaRace)
 btnRaceDer.addEventListener("click", derechaRace)
+
+
+// appends
+$("form").append(`<button id="btn1">Roll</button>`)
+
+$.get(geturl, function(respuesta, estado) {
+    console.log(respuesta)
+    console.log(estado)
+    if (estado === "success") {
+
+        let misdatos = respuesta
+        $("form").append(`<p>Nombre Recomendado: ${misdatos[aleatorio(0,10)].name}</p>`)
+
+    }
+
+})
