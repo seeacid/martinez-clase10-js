@@ -15,46 +15,50 @@
 </head>
 
 <body>
+
     <header>
         <h1>Batalla</h1>
     </header>
 
     <main>
         <div class="battleground">
-            <div class="divBoton">
-                <button class="boton" type="button" id="run"> RUN </button>
-            </div>
 
-            <div class="divBoton">
-                <button class="boton" type="button" id="mochila"> mochila </button>
-            </div>
-
-            <h2 id="consejo">Consejo</h2>
-
-            <div class="item">
-                <h3>ITEM</h3>
-                <img src="img/potion.png" alt="Pocion" class="pocion" id="pota">
-            </div>
+            <div class="ibg">
+                <h2 id="consejo">Consejo</h2>
 
 
-            <div class="divChar">
-                <img id="charImg" src="img/char.png" alt="Personaje">
-                <h3 id="charName" class="tagName">Nombre</h3>
-                <div class="vidaChar">
-                    <p id="vc">100/100</p>
+
+
+                <div class="divChar">
+                    <img id="charImg" src="img/char.png" alt="Personaje">
+
+                    <h3 id="charName" class="tagName">Nombre</h3>
+                    <div class="vidaChar">
+                        <p id="vc">100/100</p>
+
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="divMons">
+                    <img src="img/mons.png" alt="Monstruo">
+                    <h3 id="monsName" class="tagName">Nombre</h3>
+                    <div class="vidaMons">
+                        <p id="vm">100/100</p>
+                    </div>
+                </div>
 
-            <div class="divMons">
-                <img src="img/mons.png" alt="Monstruo">
-                <h3 id="monsName" class="tagName">Nombre</h3>
-                <div class="vidaMons">
-                    <p id="vm">100/100</p>
+                <div class="divBoton">
+                    <button class="boton" type="button" id="atacar"> Atacar </button>
+
+                    <button class="boton" type="button" id="skills">Habilidades</button>
+
+                    <button class="boton" type="button" id="mochila"> Mochila </button>
+
+
+                    <button class="boton" type="button" id="escapar"> Escapar </button>
                 </div>
             </div>
-
-
         </div>
 
 
@@ -63,7 +67,10 @@
 
 
     </main>
+
     <script src="js/martinez-clase8.js"></script>
+
+
 </body>
 
 </html>

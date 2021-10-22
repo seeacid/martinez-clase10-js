@@ -222,7 +222,7 @@ btnRaceDer.addEventListener("click", derechaRace)
 
 
 // appends
-$("form").append(`<button id="btn1">Roll</button>`)
+//$("form").append(``)
 
 $.get(geturl, function(respuesta, estado) {
     console.log(respuesta)
@@ -230,8 +230,20 @@ $.get(geturl, function(respuesta, estado) {
     if (estado === "success") {
 
         let misdatos = respuesta
-        $("form").append(`<p>Nombre Recomendado: ${misdatos[aleatorio(0,10)].name}</p>`)
+
+        $("#btn1").click(() => {
+            $("#inputNombre").val(`${misdatos[aleatorio(0,misdatos.length)].name}`)
+
+        })
+
+        //$("form").append(`<p>Nombre Recomendado: ${misdatos[aleatorio(0,misdatos.length)].name}</p>`)
 
     }
 
 })
+
+
+//$("#btn1").click(() => {
+//$("body").css("background", "red")
+
+//})

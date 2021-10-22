@@ -20,24 +20,30 @@
 
     <div class="formNombre">
         <h3>Nombre</h3>
-        <form action="">
+        <form class="formulario" action="">
             <input id="inputNombre" type="text" placeholder="Escribe tu nombre">
         </form>
+        <button id="btn1"><img src="img/dados.png"  alt=""></button>
+
     </div>
 
     <div class="clase">
         <img id="ClaseImg" src="img/char.png" alt="" class="claseImg">
         <div class="claseSelector">
-            <button id="btnClaseIzq"><</button>
-            <h3 id="claseNombre">Guerrero</h3>
-            <button id="btnClaseDer">></button>
+            <button class="btnFlecha" id="btnClaseIzq"><</button>
+            <div class="boxClase">
+                <h3 id="claseNombre">Guerrero</h3>
+            </div>
+            <button class="btnFlecha" id="btnClaseDer">></button>
         </div>
     </div>
 
     <div class="raza">
-        <button id="btnRaceIzq" class="btnRace"><</button>
-        <h3 id="raceNombre">Humano</h3>
-        <button id="btnRaceDer" class="btnRace">></button>
+        <button class="btnFlecha" id="btnRaceIzq" class="btnRace"><</button>
+        <div class="boxClase">
+            <h3 id="raceNombre">Humano</h3>
+        </div>
+        <button class="btnFlecha" id="btnRaceDer" class="btnRace">></button>
     </div>
 
     <div class="atributos">
