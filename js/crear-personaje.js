@@ -141,7 +141,6 @@ function crearPersonaje() {
     inputNombre = document.getElementById("inputNombre").value
     let personaje1 = new Personaje(inputNombre, raza.textContent, clase.innerText, fuerza, agilidad, inteligencia, claseActual)
 
-    alert("Personaje creado exitosamente! \n \n Nombre: " + personaje1.nombre + "\n Raza: " + personaje1.raza + "\n Clase: " + personaje1.clase + "\n nivel: " + personaje1.nivel + "\n Fuerza: " + personaje1.fuerza + "\n Agilidad: " + personaje1.agilidad + "\n Inteligencia: " + personaje1.inteligencia)
     localStorage.setItem("personaje", JSON.stringify(personaje1))
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Crear Personaje</title>
 
 </head>
 
@@ -28,7 +28,9 @@
     </div>
 
     <div class="clase">
-        <img id="ClaseImg" src="img/char.png" alt="" class="claseImg">
+        <div class="classDiv">
+            <img id="ClaseImg" src="img/char.png" alt="" class="claseImg">
+        </div>
         <div class="claseSelector">
             <button class="btnFlecha" id="btnClaseIzq"><</button>
             <div class="boxClase">
@@ -49,17 +51,17 @@
     <div class="atributos">
 
 
-        <div class="fuerza">
+        <div class="fuerza stats">
             <h3>Fuerza</h3>
             <p id="fuerzaV">0</p>
         </div>
 
-        <div class="agilidad">
+        <div class="agilidad stats">
             <h3>Agilidad</h3>
             <p id="agilidadV">0</p>
         </div>
 
-        <div class="inteligencia">
+        <div class="inteligencia stats">
             <h3>Inteligencia</h3>
             <p id="inteligenciaV">0</p>
         </div>
@@ -67,7 +69,7 @@
     </div>
 
     <div class="botonCrear">
-        <button class="crearPersonaje" onclick="crearPersonaje()"> <p class="textBtn"> <a class="textBtn" href="battle.html"> CREAR </a></p></button>
+        <button class="crearPersonaje" onclick="crearPersonaje()"> <p class="textBtn"> <a class="textBtn" href="mapa.html"> CREAR </a></p></button>
     </div>
 
     <script src="js/crear-personaje.js"></script>
